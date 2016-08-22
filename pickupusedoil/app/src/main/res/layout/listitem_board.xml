@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#8f8f8f"
+        android:layout_height="3px"></LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="50dp"
+                android:background="#ababab"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/imv_bar_date" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[서울식당]"
+                    android:textColor="#000000"
+                    android:id="@+id/tv_bar_title" />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="010-0012-0032"
+                    android:textColor="#8f8f8f"
+                    android:id="@+id/tv_bar_number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#8f8f8f"
+                    android:layout_height="wrap_content"
+                    android:text="폐유 20l 금주이내 수거 부탁드립니다."
+                    android:id="@+id/tv_bar_text"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8f8f8f"
+                    android:text="용산구 후암동 32번지"
+                    android:id="@+id/tv_bar_address"
+                    android:lines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수거요청일 : "
+                    android:textColor="#8f8f8f"
+                    android:id="@+id/tv_bar_getday" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="수거책임자 : "
+                        android:textColor="#8f8f8f"
+                        android:id="@+id/tv_bar_owner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="dddd "
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:textColor="#8f8f8f"
+                        android:id="@+id/tv_bar_sugo" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

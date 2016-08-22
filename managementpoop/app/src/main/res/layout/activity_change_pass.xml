@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_max_height"
+        android:background="@drawable/title_bg2">
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 변경"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/chagnepass_edit"
+            android:textColorHint="#ACACAC"
+            android:textSize="14dp"
+            android:hint="현재 비밀번호"
+            android:lines="1"
+            android:singleLine="true"
+            android:password="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="#ACACAC"
+            android:id="@+id/chagnepass_edit2"
+            android:textSize="14dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:hint="새로운 비밀번호"
+            android:password="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ACACAC"
+            android:id="@+id/chagnepass_edit3"
+            android:textSize="14dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:hint="새로운 비밀번호 확인"
+            android:password="true" />
+        
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="50dp"
+            android:textSize="13dp"
+            android:text="새로 설정한 비밀번호로\n자동로그인하게 됩니다."
+            android:textColor="#626262" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffff"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:id="@+id/changepass_back"
+                android:text="취소"
+                android:textStyle="bold"
+                android:background="#ff54b2c9" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="1dp"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:id="@+id/changepass_ok"
+                android:text="확인"
+                android:textStyle="bold"
+                android:background="#fff4d234" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

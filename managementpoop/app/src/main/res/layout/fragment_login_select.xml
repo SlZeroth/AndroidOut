@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/facebookloginbtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_facebook" />
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_google"
+            android:id="@+id/googleloginbtn" />
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_email"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/loginemail"
+            android:layout_gravity="center_horizontal" />
+
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_email"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/email_login" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

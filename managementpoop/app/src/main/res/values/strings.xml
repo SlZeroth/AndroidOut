@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">응가의 노예</string>
+    <string name="app_names">응가의 노예</string>
+
+    <string name="facebook_app_id">1166178890077285</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signup">signup</string>
+    <string name="title_activity_login_select">LoginSelectActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+
+    <string name="sign">간편 가입하고\n응노에서 벗어나자!</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+    <string name="gcm_defaultSenderId">620967459367</string>
+    <string name="title_activity_default_login">DefaultLoginActivity</string>
+    <string name="title_activity_change_pass">ChangePassActivity</string>
+
+    <string name="find_password"><u>비밀번호 찾기</u></string>
+    <string name="first_start"><font fgcolor="#70000000">처음 오셨나요?</font><b>시작하기</b></string>
+    <string name="login_email"><font fgcolor="#70000000">이미 가입 하셨나요?</font><b>이메일로 로그인하기</b></string>
+
+    <string name="lv1"><font fgcolor="#00BCD4">LV.1</font></string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="title_activity_intro">응가의 노예</string>
+</resources>

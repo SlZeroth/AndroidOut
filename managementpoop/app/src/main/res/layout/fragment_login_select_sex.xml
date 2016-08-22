@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_sex"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 여자"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:button="@drawable/custom_radio"
+            android:id="@+id/rad_woman"
+            android:layout_marginRight="10dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 남자"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:id="@+id/rad_man"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/custom_radio" />
+
+    </LinearLayout>
+
+</LinearLayout>

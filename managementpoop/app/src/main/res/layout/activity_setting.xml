@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_max_height"
+        android:background="@drawable/title_bg2">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="18dp"
+            android:background="@drawable/top_logo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView2" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:text="아이디 저장"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+
+            <ToggleButton
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textOn=""
+                android:textOff=""
+                android:checked="true"
+                android:background="@drawable/toggle_btn"
+                android:id="@+id/switchsaveid"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E3E6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:background="#ffffffff"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        >
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:text="자동 로그인"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/toggle_btn"
+            android:id="@+id/switchautologin"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E3E6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:text="비밀번호 변경"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_navigate_next_black_24dp"
+            android:id="@+id/setting_chagnepass" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E3E6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:text="푸시 받기"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/toggle_btn"
+            android:id="@+id/switchpush"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E3E6"/>
+
+</LinearLayout>

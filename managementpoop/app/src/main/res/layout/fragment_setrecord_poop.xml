@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:background="@drawable/radous"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/setrecode_lin"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diabtn_time"
+            android:textSize="15dp"
+            android:text="5:21 AM"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/overray_btn" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff000000"
+            android:textColor="#ff000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_below="@id/setrecode_lin"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.pjcstudio.managementpoop.Views.SquareButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@drawable/button_radous"
+                android:text="바나나"
+                android:id="@+id/pooptype1" />
+
+            <com.pjcstudio.managementpoop.Views.SquareButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_radous"
+                android:text="겨자"
+                android:id="@+id/pooptype2" />
+
+            <com.pjcstudio.managementpoop.Views.SquareButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@drawable/button_radous"
+                android:text="핫초코"
+                android:id="@+id/pooptype3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.pjcstudio.managementpoop.Views.SquareButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="50"
+                android:background="@drawable/button_radous"
+                android:text="하이"
+                android:id="@+id/pooptype4" />
+
+            <com.pjcstudio.managementpoop.Views.SquareButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_radous"
+                android:text="현무암"
+                android:id="@+id/pooptype5" />
+
+            <com.pjcstudio.managementpoop.Views.SquareButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_radous"
+                android:text="토끼똥"
+                android:id="@+id/pooptype6" />
+
+            <com.pjcstudio.managementpoop.Views.SquareButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@drawable/button_radous"
+                android:text="공수래\n공수거"
+                android:id="@+id/pooptype7" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        android:id="@+id/setrecode_setbtn"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

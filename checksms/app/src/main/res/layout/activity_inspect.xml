@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/groundand" >
+
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="7dp"
+        android:textSize="20sp"
+        android:text="@string/check_message"
+        android:textStyle="italic|bold"
+        android:typeface="serif" />
+    
+    <TextView
+        android:id="@+id/stateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/link"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/ipview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="103dp"
+        android:text= "@string/ipchecker"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+    
+    <TextView
+        android:id="@+id/virusview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/isvirus"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1" />
+    
+    <TextView
+        android:id="@+id/hazard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="166dp"
+        android:text="hazard Score : "
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+</RelativeLayout>

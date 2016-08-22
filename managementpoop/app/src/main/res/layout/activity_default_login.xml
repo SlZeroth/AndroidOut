@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lindefault"
+    tools:context="com.pjcstudio.managementpoop.Activity.DefaultLoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/top_logo2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/signeditbox"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="#ffffffff"
+                android:textColorHint="#ffffff"
+                android:hint="이메일을 입력해주세요."
+                android:id="@+id/login_id"
+                android:lines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="15dp"
+                android:background="@drawable/signeditbox"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textColorHint="#ffffff"
+                android:hint="비밀번호를 입력해주세요."
+                android:id="@+id/login_pw"
+                android:singleLine="true"
+                android:lines="1"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  자동 로그인 동의"
+                    android:id="@+id/login_check"
+                    android:layout_marginBottom="20dp"
+                    android:button="@drawable/checkbox"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="13dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/login_btn"
+                android:background="@drawable/btn_login" />
+
+
+            <com.pjcstudio.managementpoop.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_start"
+                android:layout_marginBottom="55dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

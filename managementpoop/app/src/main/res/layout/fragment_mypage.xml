@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_max_height"
+        android:background="@drawable/title_bg2">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="18dp"
+            android:background="@drawable/top_logo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView" />
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ico_setting"
+            android:id="@+id/settingbtn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="50"
+        android:layout_weight="60">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@color/white">
+
+            <com.pjcstudio.managementpoop.Views.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="네 장을 이롭게 하리라!"
+                android:textSize="20dp"
+                android:textColor="#696969"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:background="@color/white">
+
+            <com.pjcstudio.managementpoop.Views.SquareHeightButton
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:id="@+id/mylevelimage"
+                android:background="@drawable/lv1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="10"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mypagelin"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <com.pjcstudio.managementpoop.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mypage_level"
+                    android:textColor="#40E0D0"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <com.pjcstudio.managementpoop.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mypage_levelname"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/mypage_level"
+                    android:layout_toEndOf="@+id/mypage_level" />
+
+            </RelativeLayout>
+
+            <com.pjcstudio.managementpoop.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mypage_levelcomment"
+                android:layout_below="@+id/mypagelin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="응가History"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000"/>
+
+        <com.pjcstudio.managementpoop.Views.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="응가를 못눈지 어언 10일째.."
+            android:gravity="center|left"
+            android:background="#fff5f5f6"
+            android:id="@+id/textview_tip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d3d3d3"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/login_signup"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/scrollsignup"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="140dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/sign_id"
+                android:hint="Name"
+                android:textColorHint="#ffc9c9c9"
+                android:maxLength="13"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/signeditbox"
+                android:singleLine="true"
+                android:lines="1">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColorHint="#ffc9c9c9"
+                android:textColor="#ffffffff"
+                android:maxLength="30"
+                android:id="@+id/sign_email"
+                android:layout_marginBottom="15dp"
+                android:hint="E-mail address"
+                android:background="@drawable/signeditbox"
+                android:singleLine="true"
+                android:lines="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:id="@+id/sign_passwd"
+                android:maxLength="15"
+                android:textColorHint="#ffc9c9c9"
+                android:password="true"
+                android:background="@drawable/signeditbox"
+                android:hint="Password"
+                android:singleLine="true"
+                android:lines="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  자동 로그인 동의"
+                    android:button="@drawable/checkbox"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="300dp"
+                android:background="@drawable/btn_start"
+                android:id="@+id/sign_btn" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="300dp"
+                android:background="@drawable/btn_start"
+                android:id="@+id/sign_btn2" />
+
+        </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>

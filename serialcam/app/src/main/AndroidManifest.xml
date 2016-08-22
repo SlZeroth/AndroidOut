@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pjcstudio.serialcam">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".Service.ScreenService" />
+
+        <receiver android:name=".BroadcastReceiver.NetworkReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name=".Activity.GalleyActivity"
+            android:label="@string/title_activity_galley"
+            android:theme="@style/AppThemes">
+
+        </activity>
+
+
+        <activity
+            android:name=".Activity.ShowPhotoActivity"
+            android:theme="@style/AppThemes"
+            android:label="@string/title_activity_show_photo"></activity>
+        <activity android:name=".Activity.WifiActivity"
+            android:theme="@style/AppThemes"
+            android:label="와이파이 검색">
+
+        </activity>
+
+        <activity android:name=".Activity.WifiSelecterActivity"
+            android:theme="@style/PlatformDialog"
+            android:label="와이파이 검색">
+            <intent-filter>
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.farproc.wifi.connecter.action.CONNECT_OR_EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Activity.TestWifiScan"
+            android:theme="@style/AppThemes"
+            android:screenOrientation="landscape">
+
+        </activity>
+
+        <activity android:name="org.acra.CrashReportDialog"
+            android:theme="@android:style/Theme.Dialog"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"/>
+
+    </application>
+
+</manifest>

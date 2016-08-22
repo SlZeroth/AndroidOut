@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="#4CBACB"
+            android:text="NEW 응가"
+            android:id="@+id/diatab_poop" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#626262"
+            android:textColor="#A9A9A9"
+            android:text="뭘 먹었길래?"
+            android:id="@+id/diatab_food" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/switching_fragment"
+        />
+
+</LinearLayout>

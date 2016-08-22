@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.morning.morning.dungeon.Activity.ProductActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/slider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <com.morning.morning.dungeon.View.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="소제목"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/product_smalltitle"/>
+
+                <com.morning.morning.dungeon.View.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제목"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/product_title"/>
+
+                <com.morning.morning.dungeon.View.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="가격"
+                    android:id="@+id/product_price"/>
+
+                <com.morning.morning.dungeon.View.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="구매자수"
+                    android:id="@+id/product_numpersion"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="상품설명"
+                    android:background="#626262"
+                    android:textColor="#D8D8D8"
+                    android:layout_weight="1"
+                    android:id="@+id/product_btn1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="구매안내"
+                    android:background="#EEEEEE"
+                    android:textColor="#D8D8D8"
+                    android:layout_weight="1"
+                    android:id="@+id/product_btn2" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="QA"
+                    android:background="#EEEEEE"
+                    android:textColor="#D8D8D8"
+                    android:layout_weight="1"
+                    android:id="@+id/product_btn3" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_product"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_button"
+            android:layout_marginRight="3dp"
+            android:text="추천하기"
+            android:layout_weight="1"
+            android:id="@+id/product_recommend"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:text="구매하기"
+            android:background="@drawable/default_button"
+            android:id="@+id/product_buy"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/product_spinner"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/default_button"
+            android:paddingBottom="10dp"
+            android:id="@+id/product_spinners">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/product_checklist"
+                android:text="선택하기"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/product_spinnerz"
+        android:visibility="gone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/default_button"
+        android:paddingBottom="10dp"
+        android:id="@+id/product_amount">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_amountlist" />
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/product_buyframe"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="구매하기"
+            android:id="@+id/product_realbuy"
+            android:background="@drawable/default_button"/>
+
+
+        </FrameLayout>
+
+</LinearLayout>

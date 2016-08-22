@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:background="#dddee3"
+    >
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:background="#dddee3">
+
+        <RelativeLayout
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:background="#eeeff1"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:id="@+id/calendarday_image"/>
+                </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="17"
+                android:textSize="25dp"
+                android:id="@+id/day"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day"
+                android:layout_centerInParent="true"
+                android:textSize="10dp"
+                android:text="TUE"
+                android:id="@+id/day_day" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        >
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="59dp"
+            android:background="#f1f3f5"
+            android:orientation="vertical"
+            android:padding="3dp">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/ico_food"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_marginRight="1dp"
+                android:layout_height="29dp">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/ico_dung"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="1dp"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f1f3f5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#eeeff1"
+                android:layout_marginBottom="1dp">
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none"
+                    android:id="@+id/tt">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/lintop">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="29dp"
+                android:id="@+id/lindown"
+                android:orientation="horizontal"
+                android:background="#eeeff1">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/linbottom">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

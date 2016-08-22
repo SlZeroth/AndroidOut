@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/coupon_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="쿠폰서브이름"
+            android:background="#ffffffff"
+            android:id="@+id/coupon_subname"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="쿠폰이름"
+            android:background="#ffffffff"
+            android:id="@+id/coupon_name"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:textColor="#F44336"
+                android:textSize="15dp"
+                android:id="@+id/coupon_qty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:id="@+id/coupon_saleprice"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="가격"
+                android:background="#ffffffff"
+                android:id="@+id/coupon_price"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

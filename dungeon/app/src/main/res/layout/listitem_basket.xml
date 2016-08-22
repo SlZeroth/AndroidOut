@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="32dp"
+    android:paddingTop="32dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:background="@drawable/edittext_radius"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:id="@+id/basket_checkbox"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="6dp"
+            android:background="#000000"
+            android:id="@+id/basket_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택 01) 탈착후드 블록배색 패딩점퍼 카멜아아아아아아아"
+            android:id="@+id/basket_textselect" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="end"
+            android:textSize="17dp"
+            android:text="50,100원"
+            android:id="@+id/basket_price" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
